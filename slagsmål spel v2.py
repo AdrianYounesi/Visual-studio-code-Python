@@ -10,7 +10,7 @@ while(hp1 > 0 and hp2 > 0):
 
     print(player2,"has",hp2 ," hp")
     hp2 = hp2 - hit
-
+       
 if(hp1 == 0 ):
     print("game over ice has won")
 
