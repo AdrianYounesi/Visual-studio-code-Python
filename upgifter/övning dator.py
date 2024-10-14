@@ -19,4 +19,4 @@ while(index < len(service)):
 for problem in problems:
     print("service " + problem)
 
-print(f"{service[0]} has problem {problems[0]}")  #same as:print([0])
+print(f"{service[0]} has problem {problems[0]}")  #same as:print([0]) 
