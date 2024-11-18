@@ -1,0 +1,38 @@
+#method for dealing with the entrance
+def entrance():
+    print("you have entered the dungeon")
+    print("what will you do ? ")
+    answer = input("1) go to the living room? \n2) stay here")
+    if(answer == "1"):
+        livingroom()
+    elif(answer == "2"):
+        entrance()
+
+#this will run second
+def livingroom():
+    print("you have entered the living room")
+    print("what will you do ?")
+    answer = input("1) You stay, \n2) Go back, \n3) go to the draftroom? ")
+    if answer == "1": 
+            print("you have sayed in livingroom")
+            livingroom() 
+    elif answer == "2": 
+            print("you went back an back to the entrance")
+            entrance()
+    elif answer == "3":
+            print("you decided to go to drafroom")
+            draftroom()
+
+#this will go last
+def draftroom():
+    print("you entered the draftroom ")
+    print("what will you do?")
+    answer = input("1) You stay, \n2) Go back to living room")
+    if(answer == "1"):
+        livingroom()
+    elif(answer == "2"):
+        draftroom()
+
+#this will run first
+print("welcome to my labrinth")
+entrance()
