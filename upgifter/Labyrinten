@@ -2,17 +2,19 @@
 def entrance():
     print("you have entered the dungeon")
     print("what will you do ? ")
-    answer = input("1) go to the living room? \n2) stay here \n3) exit the dungeon")
+    answer = input("1) go to the living room? \n2) stay here \n3) exit the dungeon \n4) find key to secrot room")
     if(answer == "1"):
         livingroom()
     elif(answer == "2"):
         entrance()
     elif(answer == "3"):
+        print("You exited the dungeon")
         exit()
-    print("you have exited the dungeon")
-    int.input("exit")
-    
-
+    if(answer == "4"):
+        secretroom()
+    print("you used the key")
+    print("key opened door to secret room")
+    print("you have exited the labrint via the secret room")
 
 
 #this will run second
@@ -40,6 +42,11 @@ def draftroom():
     elif(answer == "2"):
         draftroom()
 
-#this will run first
-print("welcome to my labrinth")
+#this will run when activated
+def secretroom():
+ 
+
+
+#this will run first 
+    print("welcome to my labrinth")
 entrance()
