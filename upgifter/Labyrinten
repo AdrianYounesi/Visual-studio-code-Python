@@ -2,11 +2,18 @@
 def entrance():
     print("you have entered the dungeon")
     print("what will you do ? ")
-    answer = input("1) go to the living room? \n2) stay here")
+    answer = input("1) go to the living room? \n2) stay here \n3) exit the dungeon")
     if(answer == "1"):
         livingroom()
     elif(answer == "2"):
         entrance()
+    elif(answer == "3"):
+        exit()
+    print("you have exited the dungeon")
+    int.input("exit")
+    
+
+
 
 #this will run second
 def livingroom():
