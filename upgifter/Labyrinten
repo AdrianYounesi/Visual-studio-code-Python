@@ -14,7 +14,7 @@ def entrance():
         secretroom()
     print("you used the key")
     print("key opened door to secret room")
-    print("you have exited the labrint via the secret room")
+    print("you have dound found a way out and a ton of gold")
 
 
 #this will run second
