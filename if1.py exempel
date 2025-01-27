@@ -1,0 +1,43 @@
+# 1. If-sats som skriver ut "Hello, World!" om 6 är större än eller lika med 3
+if 6 >= 3:
+    print("Hello, World!")
+
+# 2. Hämta användarnamn och skriv ut "Welcome!" om det är lika med "noname"
+username = input("Enter your username: ")
+if username == "noname":
+    print("Welcome!")
+
+# 3. Efterfråga användarnamn och lösenord, skriv ut "Welcome" om båda stämmer
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+if username == "noname" and password == "nopass":
+    print("Welcome")
+else:
+    print("Wrong username or password")
+
+# 4. Loop som skriver ut "Hello, World" 32 gånger
+for i in range(32):
+    print("Hello, World")
+
+# 5. Loop som fortsätter tills rätt lösenord skrivs in
+correct_password = "secret"
+user_password = ""
+while user_password != correct_password:
+    user_password = input("Enter the password: ")
+print("Correct password!")
+
+# 6. Loop som körs 5 gånger och kollar om talet är högre än 5
+for i in range(5):
+    number = int(input("Enter a number: "))
+    if number > 5:
+        print("högre än 5!")
+
+# 7. Loop som körs tills användaren skriver in en string som kan konverteras till int
+while True:
+    user_input = input("Enter a number: ")
+    try:
+        number = int(user_input)
+        print("Thank you! You entered a valid number.")
+        break
+    except ValueError:
+        print("That's not a valid number. Try again.")
