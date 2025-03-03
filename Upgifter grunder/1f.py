@@ -8,4 +8,4 @@ summa = tal1+tal2
 differensen = tal1-tal2
 multiplikation = tal1*tal2 
 division =  tal1/tal2 
-print(f"du fick {summa}")
+
